@@ -64,6 +64,9 @@ namespace TodoApi.Controllers
             _context.SaveChanges();
             return NoContent();
         }
+        /// <summary>
+        /// Deletes a specific TodoItem.
+        /// </summary>
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
